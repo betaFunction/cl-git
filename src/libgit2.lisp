@@ -29,8 +29,10 @@
   (:https 2)
   (:ssh 4))
 
+
+;; using libgit2.so.24
 (define-foreign-library libgit2
-  (:linux (:or "libgit2.so.24" "libgit2.so.21"))
+  (:linux "libgit2.so.24")
   (:windows "libgit2.dll")
   (:darwin "libgit2.0.dylib")
   (:default "libgit2"))

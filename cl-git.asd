@@ -1,5 +1,4 @@
 ;;;; cl-git.asd
-
 (eval-when (:compile-toplevel :load-toplevel :execute)
   (asdf:oos 'asdf:load-op :cffi-grovel))
 
